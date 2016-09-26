@@ -1,0 +1,8 @@
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">{{ .Site.Params.languages.title }}</h2>
+                <ul class="list-unstyled interests-list">
+				{{ range .Site.Params.languages.list }}
+                    <li>{{ .language }} <span class="lang-desc">({{ .level }})</span></li>
+				{{ end }}
+                </ul>
+            </div><!--//languages-->

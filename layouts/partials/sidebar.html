@@ -1,0 +1,21 @@
+        <div class="sidebar-wrapper">
+
+		{{ partial "profile.html" . }}
+
+		{{ if .Site.Params.contact.enable }}
+		{{ partial "contact.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.education.enable }}
+		{{ partial "education.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.languages.enable }}
+		{{ partial "languages.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.interests.enable }}
+		{{ partial "interests.html" . }}
+		{{ end }}
+
+        </div><!--//sidebar-wrapper-->
