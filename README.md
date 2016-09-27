@@ -52,7 +52,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Getting started
 
-After installing the theme successfully it requires a just a few more steps to get your resume running.
+After installing the theme successfully it requires just a few more steps to get your resume running.
 
 ### Copying  files
 
@@ -86,7 +86,7 @@ Did you found a bug or got an idea? Feel free to use the [issue tracker](//githu
 
 The original template is released under the Creative Commons Attribution 3.0 License. Please keep the original attribution link when using for your own project. If you'd like to use the template without the attribution, you can check out other license options via template author's website: themes.3rdwavemedia.com
 
-As for Hugo port you may rewrite the "Ported for..." line with setting your name in the end of `config.toml`
+As for Hugo port you may rewrite the "Ported for..." line with setting your name at the end of `config.toml`
 	
 	[params.footer]
         copyright = ""
