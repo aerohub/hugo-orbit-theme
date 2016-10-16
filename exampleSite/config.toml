@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://example.org/"
 languageCode = "en-us"
 title = "John Doe Resume"
 theme = "hugo-orbit-theme"
