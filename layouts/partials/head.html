@@ -1,18 +1,18 @@
-    <title>{{ .Site.Title }}</title>
+    <title>{{ i18n "title" }}</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
-    <meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}">    
-    <link rel="shortcut icon" href="favicon.ico">  
+    <meta name="description" content="{{ i18n "description" }}">
+    <meta name="author" content="{{ i18n "author" }}">
+    <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- Theme CSS -->  
+
+    <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/{{ .Site.Params.styles }}">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

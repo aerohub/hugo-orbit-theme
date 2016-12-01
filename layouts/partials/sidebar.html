@@ -1,5 +1,15 @@
         <div class="sidebar-wrapper">
 
+          {{ if .IsTranslated }}
+          <div class="contact-container container-block">
+              <ul class="list-unstyled contact-list">
+      {{ range .Translations }}
+                  <li class="website" style="float: left;"><i class="fa fa-globe"></i><a href="{{ .Permalink }}">{{ .Lang }}</a>
+      {{ end }}
+              </ul>
+          </div><!--//contact-container-->
+          {{ end }}
+
 		{{ partial "profile.html" . }}
 
 		{{ if .Site.Params.contact.enable }}
