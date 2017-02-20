@@ -1,0 +1,5 @@
+            <div class="profile-container">
+                {{ range .Translations }}
+                <a class="btn btn-primary" href="{{ .Permalink }}">{{upper .Lang }}</a>
+                {{ end }}
+            </div><!--//profile-container-->

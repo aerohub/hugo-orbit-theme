@@ -1,6 +1,10 @@
         <div class="sidebar-wrapper">
 
 		{{ partial "profile.html" . }}
+		
+		{{ if .IsTranslated }}
+		{{ partial "translate.html" . }}
+		{{ end }}
 
 		{{ if .Site.Params.contact.enable }}
 		{{ partial "contact.html" . }}
