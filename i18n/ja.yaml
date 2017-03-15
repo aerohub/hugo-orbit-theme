@@ -4,7 +4,7 @@
   translation: 経歴
 - id: interests
   translation: 趣味
-- id: languages
+- id: language
   translation: 言語能力
 - id: projects
   translation: プロジェクト

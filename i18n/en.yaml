@@ -4,7 +4,7 @@
   translation: Experiences
 - id: interests
   translation: Interests
-- id: languages
+- id: language
   translation: Languages
 - id: projects
   translation: Projects
