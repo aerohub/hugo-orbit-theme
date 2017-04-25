@@ -63,7 +63,7 @@ Take a look inside the [`exampleSite`](//github.com/aerohub/hugo-orbit-theme/tre
 
 ### Configuring
 
-Open your just-copied `config.toml` and fill it with your data. All the page content may be configured throw one file.
+Open your just-copied `data/cv.toml` and fill it with your data. All the page content may be configured threw one file.
 
 ### Test your site
 
