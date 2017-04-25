@@ -11,19 +11,19 @@
 
 	<div class="main-wrapper">
 
-    {{ if .Site.Params.summary.enable }}
+    {{ if .Site.Data.cv.summary.enable }}
 	{{ partial "summary.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.experiences.enable }}
+    {{ if .Site.Data.cv.experiences.enable }}
     {{ partial "experiences.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.projects.enable }}
+    {{ if .Site.Data.cv.projects.enable }}
     {{ partial "projects.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.skills.enable }}
+    {{ if .Site.Data.cv.skills.enable }}
 	{{ partial "skills.html" . }}
     {{ end }}
 

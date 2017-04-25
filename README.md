@@ -56,11 +56,14 @@ After installing the theme successfully it requires just a few more steps to get
 
 ### Copying  files
 
-Take a look inside the [`exampleSite`](//github.com/aerohub/hugo-orbit-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/aerohub/hugo-orbit-theme/blob/master/exampleSite/config.toml). To start just copy the `config.toml` into the root folder of your Hugo site.
+Take a look inside the [`exampleSite`](//github.com/aerohub/hugo-orbit-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/aerohub/hugo-orbit-theme/blob/master/exampleSite/config.toml) and a directory called `data`. To start just:
+
+- Copy the `config.toml` into the root folder of your Hugo site and
+- Copy `data/cv.toml` to the `data` directory in the root forder of your Hugo site.
 
 ### Configuring
 
-Open your just-copied `config.toml` and fill it with your data. All the page content may be configured throw one file.
+Open your just-copied `data/cv.toml` and fill it with your data. All the page content may be configured through one file.
 
 ### Test your site
 
