@@ -1,6 +1,6 @@
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-				{{ range .Site.Params.contact.list }}
+				{{ range .Site.Data.cv.contact.list }}
                     <li class="{{ .class }}"><i class="fa {{ .icon }}"></i><a href="{{ .url }}">{{ .title }}</a></li>
 				{{ end }}
                 </ul>

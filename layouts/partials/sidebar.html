@@ -6,19 +6,19 @@
 		{{ partial "translate.html" . }}
 		{{ end }}
 
-		{{ if .Site.Params.contact.enable }}
+		{{ if .Site.Data.cv.contact.enable }}
 		{{ partial "contact.html" . }}
 		{{ end }}
 
-		{{ if .Site.Params.education.enable }}
+		{{ if .Site.Data.cv.education.enable }}
 		{{ partial "education.html" . }}
 		{{ end }}
 
-		{{ if .Site.Params.languages.enable }}
+		{{ if .Site.Data.cv.languages.enable }}
 		{{ partial "languages.html" . }}
 		{{ end }}
 
-		{{ if .Site.Params.interests.enable }}
+		{{ if .Site.Data.cv.interests.enable }}
 		{{ partial "interests.html" . }}
 		{{ end }}
 

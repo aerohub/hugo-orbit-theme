@@ -1,6 +1,6 @@
             <div class="education-container container-block">
                 <h2 class="container-block-title">{{ i18n "education" }}</h2>
-				{{ range .Site.Params.education.list }}
+				{{ range .Site.Data.cv.education.list }}
                 <div class="item">
                     <h4 class="degree">{{ .degree }}</h4>
                     <h5 class="meta">{{ .college }}</h5>

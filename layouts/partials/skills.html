@@ -1,7 +1,7 @@
             <section class="skills-section section">
-                <h2 class="section-title"><i class="fa {{ .Site.Params.skills.icon }}"></i>{{ i18n "skills" }}</h2>
+                <h2 class="section-title"><i class="fa {{ .Site.Data.cv.skills.icon }}"></i>{{ i18n "skills" }}</h2>
                 <div class="skillset">
-				{{ range .Site.Params.skills.list }}
+				{{ range .Site.Data.cv.skills.list }}
                     <div class="item">
                         <h3 class="level-title">{{ .skill }}</h3>
                         <div class="level-bar">
