@@ -90,19 +90,19 @@ disable404 = true
         dates = "2007 - 2011"
 
     # Languages section
-    [params.languages]
+    [params.language]
         enable = true
         title = "Languages"
 
-        [[params.languages.list]]
+        [[params.language.list]]
         language = "English"
         level = "Native"
 
-        [[params.languages.list]]
+        [[params.language.list]]
         language = "French"
         level = "Professional"
 
-        [[params.languages.list]]
+        [[params.language.list]]
         language = "Russian"
         level = "Professional"
 
