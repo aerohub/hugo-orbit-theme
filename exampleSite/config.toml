@@ -40,37 +40,37 @@ disable404 = true
 
         [[params.contact.list]]
         class = "email"
-        icon = "fa-envelope"
+        icon = "fas fa-envelope"
         url = "mailto: yourname@email.com"
         title = "john.doe@website.com"
 
         [[params.contact.list]]
         class = "phone"
-        icon = "fa-phone"
+        icon = "fas fa-phone"
         url = "tel:+1234567890"
         title = "+1234567890"
 
         [[params.contact.list]]
         class = "website"
-        icon = "fa-globe"
+        icon = "fas fa-globe-americas"
         url = "//portfoliosite.com"
         title = "portfoliosite.com"
 
         [[params.contact.list]]
         class = "linkedin"
-        icon = "fa-linkedin"
+        icon = "fab fa-linkedin-in"
         url = "//linkedin.com/in/johndoe"
         title = "linkedin.com/in/johndoe"
 
         [[params.contact.list]]
         class = "github"
-        icon = "fa-github"
+        icon = "fab fa-github"
         url = "//github.com/username"
         title = "github.com/username"
 
         [[params.contact.list]]
         class = "twitter"
-        icon = "fa-twitter"
+        icon = "fab fa-twitter"
         url = "//twitter.com/username"
         title = "@twittername"
 
