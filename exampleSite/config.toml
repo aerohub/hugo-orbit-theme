@@ -40,37 +40,37 @@ disable404 = true
 
         [[params.contact.list]]
         class = "email"
-        icon = "fa-envelope"
+        icon = "fas fa-envelope"
         url = "mailto: yourname@email.com"
         title = "john.doe@website.com"
 
         [[params.contact.list]]
         class = "phone"
-        icon = "fa-phone"
+        icon = "fas fa-phone"
         url = "tel:+1234567890"
         title = "+1234567890"
 
         [[params.contact.list]]
         class = "website"
-        icon = "fa-globe"
+        icon = "fas fa-globe-americas"
         url = "//portfoliosite.com"
         title = "portfoliosite.com"
 
         [[params.contact.list]]
         class = "linkedin"
-        icon = "fa-linkedin"
+        icon = "fab fa-linkedin-in"
         url = "//linkedin.com/in/johndoe"
         title = "linkedin.com/in/johndoe"
 
         [[params.contact.list]]
         class = "github"
-        icon = "fa-github"
+        icon = "fab fa-github"
         url = "//github.com/username"
         title = "github.com/username"
 
         [[params.contact.list]]
         class = "twitter"
-        icon = "fa-twitter"
+        icon = "fab fa-twitter"
         url = "//twitter.com/username"
         title = "@twittername"
 
@@ -127,14 +127,14 @@ disable404 = true
     # Summary section
     [params.summary]
         enable = true
-        icon = "fa-user"
+        icon = "fas fa-user"
         title = "Career Profile"
         summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
 
     # Experiences section
     [params.experiences]
         enable = true
-        icon = "fa-briefcase"
+        icon = "fas fa-briefcase"
         title = "Experiences"
 
         [[params.jobs.list]]
@@ -158,7 +158,7 @@ disable404 = true
     # Projects section
     [params.projects]
         enable = true
-        icon = "fa-archive"
+        icon = "fas fa-archive"
         title = "Projects"
         intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
 
@@ -190,7 +190,7 @@ disable404 = true
     # Skills section
     [params.skills]
         enable = true
-        icon = "fa-rocket"
+        icon = "fas fa-rocket"
         title = "Skills & Proficiency"
 
         [[params.skills.list]]
