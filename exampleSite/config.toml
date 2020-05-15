@@ -2,7 +2,6 @@
 
 baseurl = "http://example.org/"
 languageCode = "en-us"
-title = "John Doe Resume"
 theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
@@ -16,6 +15,7 @@ disable404 = true
 # Meta
     description = "Hugo Responsive Resume/CV Theme for Developers"
     author = "Pavel Kanyshev"
+    title = "John Doe Resume"
 
 # Theme styles
 
