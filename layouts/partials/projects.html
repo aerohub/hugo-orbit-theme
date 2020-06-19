@@ -1,5 +1,5 @@
             <section class="section projects-section">
-                <h2 class="section-title"><i class="fa {{ .Site.Params.projects.icon }}"></i>{{ i18n "projects" }}</h2>
+                <h2 class="section-title"><i class="fa {{ .Site.Params.projects.icon }}"></i>{{ .Site.Params.projects.title }}</h2>
                 <div class="intro">
                     <p>{{ with .Site.Params.projects.intro }}{{ . | markdownify }}{{ end }}</p>
                 </div><!--//intro-->
