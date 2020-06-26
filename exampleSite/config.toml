@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "http://example.org/"
+baseurl = "https://github.com/ss-o/hugo-orbit-theme/"
 languageCode = "en-us"
 title = "John Doe Resume"
 theme = "hugo-orbit-theme"
