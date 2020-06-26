@@ -30,4 +30,10 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
-        echo test, and deploy your project.
+- name: Hugo setup
+  uses: peaceiris/actions-hugo@v2.4.12
+  with:
+    # The Hugo version to download (if necessary) and use. Example: 0.58.2
+    hugo-version: # optional, default is latest
+    # Download (if necessary) and use Hugo extended version. Example: true
+    extended: # optional, default is false        echo test, and deploy your project.
