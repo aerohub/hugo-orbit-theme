@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on WiseHub MG | Digital Clouds</title>
+    <link>https://ss-o.github.io/series/theme/</link>
+    <description>Recent content in Theme on WiseHub MG | Digital Clouds</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ss-o.github.io/series/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Twemoji Support 🤩</title>
+      <link>https://ss-o.github.io/posts/twemoji-support/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ss-o.github.io/posts/twemoji-support/</guid>
+      <description>If you want to use Twitter&amp;rsquo;s Twemoji across your website, enable it in your config.toml
+[params] enableTwemoji = true This will not only give your website unified emojis across all platforms. It will also give you the latest Unicode 13 emoji set, such as 🧋🫕🛻🪗🪞.
+Emoji size changes with text size 🤩 Emoji size changes with text size 🤩 Emoji size changes with text size 🤩 Emoji size changes with text size 🤩 Emoji size changes with text size 🤩 Emoji size changes with text size 🤩  </description>
+    </item>
+    
+    <item>
+      <title>Render LaTeX using KaTeX</title>
+      <link>https://ss-o.github.io/posts/render-latex-using-katex/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ss-o.github.io/posts/render-latex-using-katex/</guid>
+      <description>Enable katex by adding katex = &amp;quot;true&amp;quot; to the front matter
++++ katex = &amp;#34;true&amp;#34; +++ If you want to enable KaTeX or MathJax for all post, add katex = ture or math = true in config.toml in [params] section.
+It&amp;rsquo;s almost a dropin alternative to the mathjax solution,you should just choose one of them.
+Inline math looks like this
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} =1$ This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$</description>
+    </item>
+    
+    <item>
+      <title>Theme Demo</title>
+      <link>https://ss-o.github.io/posts/theme-demo/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ss-o.github.io/posts/theme-demo/</guid>
+      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading  This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
+   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://ss-o.github.io/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ss-o.github.io/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+  </channel>
+</rss>
