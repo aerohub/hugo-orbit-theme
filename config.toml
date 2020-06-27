@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 baseurl = "https://ss-o.github.io/"
 title = "WiseHub MG | Digital Clouds"
 
@@ -125,3 +126,8 @@ disqusShortname = "yourdiscussshortname"
             name = "Contact me"
             weight = 5
             url = "contact/"
+=======
+baseURL = "https://ss-o.github.io/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+>>>>>>> 0338ccac7a605e26b3d506cdee5fd3904cf265aa
