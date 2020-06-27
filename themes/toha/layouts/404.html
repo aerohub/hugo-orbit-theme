@@ -1,0 +1,19 @@
+{{ define "header" }}
+    <link rel="stylesheet" href="/assets/css/404.css">
+{{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navbar-2.html" (dict "baseURL" .Site.BaseURL "title" .Site.Title "hasToggleButton" false) }}
+{{ end }}
+
+{{ define "content" }}
+<div class="container">
+    <div class="notFound">
+        <img src="/assets/images/404.png" alt="">
+        <div class="message">
+            <h1>404</h1>
+            <h4>The page you are looking for is not there yet.</h4>
+        </div>
+    </div>
+</div>
+{{ end }}

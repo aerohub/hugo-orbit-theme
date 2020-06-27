@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .Page.Title }}</title>
+    <!------ ADD COMMON HEADERS -------->
+    {{- partial "header.html" . -}}
+
+    <!------ ADD PAGE SPECIFIC HEADERS ------->
+    {{ block "header" . }} {{ end }}
+
+    <!-- ADD GOOGLE ANALYTICS IF ENABLED -->
+    {{ if .Site.GoogleAnalytics }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+  </head>
+
+  <body>
+    <div class="container-fluid bg-dimmed wrapper">
+      <!----- ADD NAVBAR --------------->
+      {{ block "navbar" . }} {{ end }}
+
+      <!----- ADD PAGE CONTENT --------->
+      {{ block "content" . }} {{ end }}
+    </div>
+
+    <!------- ADD FOOTER ------------>
+    {{- partial "footer.html" . -}}
+
+    <!------- ADD COMMON SCRIPTS ------->
+    {{ partial "scripts.html" . }}
+
+    <!------- ADD PAGE SPECIFIC SCRIPTS ------>
+    {{ block "scripts" . }} {{ end }}
+  </body>
+</html>

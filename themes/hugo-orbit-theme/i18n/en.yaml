@@ -1,0 +1,14 @@
+- id: education
+  translation: Education
+- id: experiences
+  translation: Experiences
+- id: interests
+  translation: Interests
+- id: language
+  translation: Languages
+- id: projects
+  translation: Projects
+- id: skills
+  translation: Skills & Proficiency
+- id: summary
+  translation: Career Profile

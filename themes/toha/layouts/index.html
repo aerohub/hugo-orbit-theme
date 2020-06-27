@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{- .Site.Title -}}</title>
+    <!-- import common headers -->
+    {{- partial "header.html" . -}}
+
+    <!-- import index page specific headers -->
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/skills.css" />
+    <link rel="stylesheet" href="/assets/css/experiences.css" />
+    <link rel="stylesheet" href="/assets/css/projects.css" />
+    <link rel="stylesheet" href="/assets/css/recent-posts.css" />
+    <link rel="stylesheet" href="/assets/css/achievements.css" />
+
+    <!-- Add Google Analytics if enabled in configuration -->
+    {{ if .Site.GoogleAnalytics }}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+  </head>
+  <body data-spy="scroll" data-target="#top-navbar" data-offset="50">
+    <!--- NAVBAR ------------------------->
+    {{- partial "navbar.html" . -}}
+
+    <!--- ADD HOME SECTION ---------------->
+    {{- partial "home.html" . -}}
+
+    <!--- ADD ABOUT SECTION --------------->
+    {{- partial "about.html" . -}}
+
+    <!--- ADD SKILLS SECTION -------------->
+    {{- partial "skills.html" . -}}
+
+    <!--- ADD EXPERIENCE SECTION ----------->
+    {{- partial "experiences.html" . -}}
+
+    <!--- ADD PROJECT SECTION -------------->
+    {{- partial "projects.html" . -}}
+
+    <!--- ADD RECENT-POSTS SECTION --------->
+    {{- partial "recent-posts.html" . -}}
+
+    <!--- ADD ACHIEVEMENT SECTION ---------->
+    {{- partial "achievements.html" . -}}
+
+    <!--- ADD FOOTER ----------------------->
+    {{- partial "footer.html" . -}}
+
+    <!--- ADD COMMON SCRIPTS --------------->
+    {{ partial "scripts.html" . }}
+
+    <!--- ADD INDEX PAGE SPECIFIC SCRIPTS -->
+    <script src="/assets/js/itype.min.js"></script>
+    <script src="/assets/js/github-button.js"></script>
+    <script src="/assets/js/home.js"></script>
+  </body>
+</html>
