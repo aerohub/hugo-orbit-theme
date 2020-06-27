@@ -26,7 +26,7 @@ jobs:
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: ss-o/ss-o.github.io
-          publish_dir: ./my-site/public
+          publish_dir: ./public
           keep_files: true
           user_name: ss-o
           user_email: sall@w-ss.io
