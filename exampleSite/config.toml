@@ -11,6 +11,12 @@ disableRSS = true
 disableSitemap = true
 disable404 = true
 
+# Enable HTML tags in markdown renderer, for example for line breaks <br>
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 
 # Meta
