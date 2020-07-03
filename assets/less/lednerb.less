@@ -41,19 +41,26 @@
         padding: 60px;
         min-width: 400px;
 
-        .job-info {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+        .experiences-section {
 
-          .company {
-            margin: 0;
-          }
+            .job-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-          .time {
-            position: relative;
-            margin-top: 0 !important;
-          }
+                .company {
+                    margin: 0;
+                }
+
+                .time {
+                    position: relative;
+                    margin-top: 0 !important;
+                }
+            }
+
+            .details {
+                margin-top: 10px;
+            }
         }
 
         .project-title {
@@ -87,16 +94,18 @@
         right: 5px;
     }
 
-    .currentLanguage {
-        font-weight: bold;
-    }
-
-    .btn {
+    a {
+        display: inline-block;
         padding: 6px 4px;
         font-size: 12px;
+
+        &.currentLanguage {
+            font-weight: bold;
+        }
     }
 
-    .btn:hover {
+    a:hover {
         color: darken(@theme-color, 15%);
+        text-decoration: none;
     }
 }

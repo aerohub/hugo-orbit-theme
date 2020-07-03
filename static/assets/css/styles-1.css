@@ -474,17 +474,20 @@ p {
   padding: 60px;
   min-width: 400px;
 }
-.wrapper .main-wrapper .job-info {
+.wrapper .main-wrapper .experiences-section .job-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wrapper .main-wrapper .job-info .company {
+.wrapper .main-wrapper .experiences-section .job-info .company {
   margin: 0;
 }
-.wrapper .main-wrapper .job-info .time {
+.wrapper .main-wrapper .experiences-section .job-info .time {
   position: relative;
   margin-top: 0 !important;
+}
+.wrapper .main-wrapper .experiences-section .details {
+  margin-top: 10px;
 }
 .wrapper .main-wrapper .project-title {
   display: block;
@@ -507,13 +510,15 @@ p {
 .sidebarLeft .translations-container {
   right: 5px;
 }
-.translations-container .currentLanguage {
-  font-weight: bold;
-}
-.translations-container .btn {
+.translations-container a {
+  display: inline-block;
   padding: 6px 4px;
   font-size: 12px;
 }
-.translations-container .btn:hover {
+.translations-container a.currentLanguage {
+  font-weight: bold;
+}
+.translations-container a:hover {
   color: #2d7788;
+  text-decoration: none;
 }

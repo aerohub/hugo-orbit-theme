@@ -3,9 +3,9 @@
     {{- $.Scratch.Set "language" .Language -}}
     {{ range $.Site.Home.AllTranslations }}
         {{ if eq ($.Scratch.Get "language") .Language }}
-            <a href="{{ .Permalink }}" class="btn btn-translate currentLanguage">{{ upper .Language }}</a>
+            <a href="{{ .Permalink }}" class="currentLanguage">{{ upper .Language }}</a>
         {{ else }}
-            <a href="{{ .Permalink }}" class="btn btn-translate">{{ upper .Language }}</a>
+            <a href="{{ .Permalink }}">{{ upper .Language }}</a>
         {{ end }}
     {{ end }}
     </div>
