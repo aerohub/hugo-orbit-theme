@@ -1,0 +1,81 @@
+@media print {
+  body {
+    width: 21cm;
+    padding: 0;
+    display: flex;
+    margin: 0;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  .wrapper {
+    width: 21cm;
+    margin: 0;
+    padding: 0;
+
+    .sidebar-wrapper {
+      min-width: 6.5cm;
+      background: @theme-color !important;
+      color: #ffffff !important;
+      font-size: 10pt;
+
+      .container-block {
+        padding: 0.5cm;
+      }
+
+      .profile-container {
+        padding: 0.5cm;
+        // background: #ddd !important;
+        background: rgba(0, 0, 0, 0.2) !important;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .downloads-container {
+        display: none;
+      }
+    }
+
+    .main-wrapper {
+      padding: 1.25cm;
+
+      .experiences-section .item {
+
+        page-break-inside: avoid;
+
+        .job-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 2mm;
+          margin-bottom: 2mm;
+
+          .company {
+            margin: 0;
+          }
+
+          .time {
+            position: relative;
+          }
+        }
+      }
+
+      .section-title  {
+        page-break-after: avoid;
+      }
+
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+
+  a[href]:after {
+    content: "";
+  }
+}
