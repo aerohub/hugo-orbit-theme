@@ -1,22 +1,22 @@
-    <title>{{ .Site.Params.title }}</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta name="author" content="{{ .Site.Params.author }}">
-    {{ if .Site.Params.keywords }}
-        <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
-    {{ end }}
-    
-    <link rel="apple-touch-icon" sizes="180x180" href=" {{ "/apple-touch-icon.png" | absURL}}">
-    <link rel="icon" type="image/png" sizes="32x32" href=" {{ "/favicon-32x32.png" | absURL}}">
-    <link rel="icon" type="image/png" sizes="16x16" href=" {{ "/favicon-16x16.png" | absURL}}">
-    <link rel="manifest" href=" {{ "/site.webmanifest" | absURL}}">
+<title>{{ .Site.Params.title }}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+{{ if .Site.Params.keywords }}
+    <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+{{ end }}
 
-    <link rel="stylesheet" href="{{ "/assets/plugins/bootstrap/css/bootstrap.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "/assets/plugins/font-awesome/css/font-awesome.css" | absURL }}">
-    
-    {{ $stylesPath := printf "/assets/css/%s" .Site.Params.styles }}
-    <link id="theme-style" rel="stylesheet" href="{{ $stylesPath | absURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href=" {{ "/apple-touch-icon.png" | absURL}}">
+<link rel="icon" type="image/png" sizes="32x32" href=" {{ "/favicon-32x32.png" | absURL}}">
+<link rel="icon" type="image/png" sizes="16x16" href=" {{ "/favicon-16x16.png" | absURL}}">
+<link rel="manifest" href=" {{ "/site.webmanifest" | absURL}}">
 
-	{{ template "_internal/google_analytics_async.html" . }}
+<link rel="stylesheet" href="{{ "/assets/plugins/bootstrap/css/bootstrap.css" | absURL }}">
+<link rel="stylesheet" href="{{ "/assets/plugins/font-awesome/css/font-awesome.css" | absURL }}">
+
+{{ $stylesPath := printf "/assets/css/%s" .Site.Params.styles }}
+<link id="theme-style" rel="stylesheet" href="{{ $stylesPath | absURL }}">
+
+{{ template "_internal/google_analytics_async.html" . }}
