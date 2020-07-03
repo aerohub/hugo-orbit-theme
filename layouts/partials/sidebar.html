@@ -22,4 +22,8 @@
 		{{ partial "interests.html" . }}
 		{{ end }}
 
+		{{ if .Site.Params.downloads.enable }}
+		{{ partial "downloads.html" . }}
+		{{ end }}
+
         </div><!--//sidebar-wrapper-->

@@ -1,0 +1,11 @@
+<div class="downloads-container container-block">
+    <h2 class="container-block-title">{{ .Site.Params.downloads.title }}</h2>
+    <ul class="list-unstyled downloads-list">
+        {{ range .Site.Params.downloads.list }}
+        <li>
+            <i class="fa {{ .icon | default "fa-download" }}"></i>
+            <a href="{{ .filepath | absURL }}" download>{{ .name | markdownify }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
