@@ -4,6 +4,10 @@
     flex-direction: row-reverse;
     align-items: stretch;
 
+    &.sidebarLeft {
+        flex-direction: row;
+    }
+
     .sidebar-wrapper {
         min-width: 255px;
         position: relative;
@@ -47,8 +51,6 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          // margin-top: 2mm;
-          // margin-bottom: 2mm;
 
           .company {
             margin: 0;
@@ -76,8 +78,6 @@
     }
 
     .label-info {
-        // color: #42a8c0;
-        // background-color: white;
         background-color: @theme-color;
     }
 }

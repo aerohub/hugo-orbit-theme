@@ -5,29 +5,29 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper {{ with .Site.Params.sidebarOnLeft }} sidebarLeft {{ end }}">
 
-    {{ partial "sidebar.html" . }}
+        {{ partial "sidebar.html" . }}
 
-	<div class="main-wrapper">
+        <div class="main-wrapper">
 
-    {{ if .Site.Params.summary.enable }}
-	{{ partial "summary.html" . }}
-    {{ end }}
+        {{ if .Site.Params.summary.enable }}
+        {{ partial "summary.html" . }}
+        {{ end }}
 
-    {{ if .Site.Params.experiences.enable }}
-    {{ partial "experiences.html" . }}
-    {{ end }}
+        {{ if .Site.Params.experiences.enable }}
+        {{ partial "experiences.html" . }}
+        {{ end }}
 
-    {{ if .Site.Params.projects.enable }}
-    {{ partial "projects.html" . }}
-    {{ end }}
+        {{ if .Site.Params.projects.enable }}
+        {{ partial "projects.html" . }}
+        {{ end }}
 
-    {{ if .Site.Params.skills.enable }}
-	{{ partial "skills.html" . }}
-    {{ end }}
+        {{ if .Site.Params.skills.enable }}
+        {{ partial "skills.html" . }}
+        {{ end }}
 
-	</div><!--//main-body-->
+        </div>
     </div>
 
 	{{ partial "footer.html" . }}
