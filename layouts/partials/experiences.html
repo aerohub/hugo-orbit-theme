@@ -6,9 +6,11 @@
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title">{{ .position }}</h3>
+                        </div>
+                        <div class="job-info">
+                            <div class="company">{{ .company | markdownify }}</div>
                             <div class="time">{{ .dates }}</div>
-                        </div><!--//upper-row-->
-                        <div class="company">{{ .company }}</div>
+                        </div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
