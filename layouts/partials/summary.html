@@ -3,4 +3,11 @@
                 <div class="summary">
                     <p>{{ with .Site.Params.summary.summary }}{{ . | markdownify }}{{ end }}</p>
                 </div><!--//summary-->
+                {{ if .Site.Params.summary.keywordsAsTags }}
+                    <div class="tags">
+                    {{ range .Site.Params.keywords }}
+                        <span class="label label-info">{{ . }}</span>
+                    {{ end }}
+                    </div>
+                {{ end }}
             </section><!--//section-->
