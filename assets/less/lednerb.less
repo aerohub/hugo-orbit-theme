@@ -21,12 +21,6 @@
             color: rgba(255, 255, 255, 0.75);
         }
 
-        .translations {
-            .currentLanguage {
-                border-bottom: 1px solid white;
-            }
-        }
-
         .education-container{
             .meta, .time {
                 color: rgba(255, 255, 255, 0.75);
@@ -79,5 +73,30 @@
 
     .label-info {
         background-color: @theme-color;
+    }
+}
+
+.translations-container {
+    position: absolute;
+    color: @theme-color;
+    right: 260px;
+    top: 0px;
+    transition: all 0.3s;
+
+    .sidebarLeft & {
+        right: 5px;
+    }
+
+    .currentLanguage {
+        font-weight: bold;
+    }
+
+    .btn {
+        padding: 6px 4px;
+        font-size: 12px;
+    }
+
+    .btn:hover {
+        color: darken(@theme-color, 15%);
     }
 }

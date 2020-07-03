@@ -11,6 +11,10 @@
 
         <div class="main-wrapper">
 
+        {{ if .IsTranslated }}
+        {{ partial "translate.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.summary.enable }}
         {{ partial "summary.html" . }}
         {{ end }}
