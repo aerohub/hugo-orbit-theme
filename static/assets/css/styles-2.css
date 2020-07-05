@@ -415,6 +415,9 @@ p {
   .wrapper .main-wrapper {
     padding: 1.25cm;
   }
+  .wrapper .main-wrapper .translations-container {
+    display: none;
+  }
   .wrapper .main-wrapper .experiences-section .item {
     page-break-inside: avoid;
   }
