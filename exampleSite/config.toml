@@ -5,10 +5,11 @@ defaultContentLanguage = "en"
 theme = "hugo-orbit-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
-# Do not build files for websites. Need them? Set to false
-disableRSS = true
-disableSitemap = true
-disable404 = true
+# Do not build files for websites. Need them? Remove them from the list.
+disableKinds = ["sitemap", "RSS"]
+
+# Disable building the /categories and /tags folder
+[taxonomies]
 
 # Enable HTML tags in markdown renderer, for example for line breaks <br>
 [markup]
