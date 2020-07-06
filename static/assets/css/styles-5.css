@@ -341,43 +341,6 @@ p {
 .footer .fa-heart {
   color: #fb866a;
 }
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-  .sidebar-wrapper {
-    position: static;
-    width: inherit;
-  }
-  .main-wrapper {
-    padding: 30px;
-  }
-  .main-wrapper .time {
-    position: static;
-    display: block;
-    margin-top: 5px;
-  }
-  .main-wrapper .upper-row {
-    margin-bottom: 0;
-  }
-}
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .skillset .level-title {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    margin-bottom: 0;
-  }
-  .skillset .level-bar {
-    display: inline-block;
-    width: 70%;
-    float: left;
-    position: relative;
-    top: 1px;
-  }
-}
-/* Large devices (large desktops, 1200px and up) */
-/* Ex-Large devices (large desktops, 1200px and up) */
 @media print {
   body {
     width: 21cm;
@@ -488,6 +451,7 @@ p {
 .wrapper .main-wrapper .experiences-section .job-info .time {
   position: relative;
   margin-top: 0 !important;
+  margin-left: 10px;
 }
 .wrapper .main-wrapper .experiences-section .details {
   margin-top: 10px;
@@ -525,3 +489,47 @@ p {
   color: #f47c03;
   text-decoration: none;
 }
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 650px) {
+  body {
+    padding: 15px;
+  }
+  .wrapper {
+    flex-direction: column !important;
+  }
+  .wrapper .sidebar-wrapper {
+    width: 100%;
+  }
+  .wrapper .sidebar-wrapper .profile-container img {
+    max-width: 300px;
+  }
+  .wrapper .main-wrapper {
+    padding: 30px;
+    min-width: inherit;
+  }
+  .wrapper .translations-container {
+    right: 5px;
+  }
+  .wrapper .translations-container a {
+    color: white;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .skillset .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .skillset .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
