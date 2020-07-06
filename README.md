@@ -23,6 +23,7 @@ This is a Hugo port of [Orbit](//github.com/xriley/Orbit-Theme) - great looking 
 - Support for Google Analytics
 - Print format improvements with option to generate PDF (further information below)
 - Feature for sidebar on the left side
+- Multi language support
 
 ## Demo
 
