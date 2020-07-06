@@ -1,5 +1,12 @@
-            <div class="profile-container">
-                {{ range .Translations }}
-                <a class="btn btn-translate" href="{{ .Permalink }}">{{upper .Lang }}</a>
-                {{ end }}
-            </div><!--//profile-container-->
+<div class="translations-container">
+    <div class="translations">
+    {{- $.Scratch.Set "language" .Language -}}
+    {{ range $.Site.Home.AllTranslations }}
+        {{ if eq ($.Scratch.Get "language") .Language }}
+            <a href="{{ .Permalink }}" class="currentLanguage">{{ upper .Language }}</a>
+        {{ else }}
+            <a href="{{ .Permalink }}">{{ upper .Language }}</a>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

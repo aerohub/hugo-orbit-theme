@@ -2,10 +2,6 @@
 
 		{{ partial "profile.html" . }}
 
-		{{ if .IsTranslated }}
-		{{ partial "translate.html" . }}
-		{{ end }}
-
 		{{ if .Site.Params.contact.enable }}
 		{{ partial "contact.html" . }}
 		{{ end }}
@@ -20,6 +16,10 @@
 
 		{{ if .Site.Params.interests.enable }}
 		{{ partial "interests.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.downloads.enable }}
+		{{ partial "downloads.html" . }}
 		{{ end }}
 
         </div><!--//sidebar-wrapper-->

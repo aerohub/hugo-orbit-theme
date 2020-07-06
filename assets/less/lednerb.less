@@ -1,0 +1,112 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+
+    &.sidebarLeft {
+        flex-direction: row;
+    }
+
+    .sidebar-wrapper {
+        min-width: 255px;
+        position: relative;
+        height: 100%;
+
+        .name {
+            font-size: 25px;
+        }
+
+        .tagline {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .education-container{
+            .meta, .time {
+                color: rgba(255, 255, 255, 0.75);
+            }
+        }
+
+        .language-container .lang-desc {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .downloads-list li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-wrapper {
+
+        padding: 60px;
+        min-width: 400px;
+
+        .experiences-section {
+
+            .job-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .company {
+                    margin: 0;
+                }
+
+                .time {
+                    position: relative;
+                    margin-top: 0 !important;
+                    margin-left: 10px;
+                }
+            }
+
+            .details {
+                margin-top: 10px;
+            }
+        }
+
+        .project-title {
+            display: block;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.tags {
+
+    span {
+        margin: 2px;
+        display: inline-block;
+    }
+
+    .label-info {
+        background-color: @theme-color;
+    }
+}
+
+.translations-container {
+    position: absolute;
+    color: @theme-color;
+    right: 260px;
+    top: 0px;
+    transition: all 0.3s;
+
+    .sidebarLeft & {
+        right: 5px;
+    }
+
+    a {
+        display: inline-block;
+        padding: 6px 4px;
+        font-size: 12px;
+
+        &.currentLanguage {
+            font-weight: bold;
+        }
+    }
+
+    a:hover {
+        color: darken(@theme-color, 15%);
+        text-decoration: none;
+    }
+}
