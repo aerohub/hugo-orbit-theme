@@ -200,6 +200,11 @@ p {
   overflow: hidden;
   margin-bottom: 2px;
 }
+.main-wrapper .lower-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
 .main-wrapper .job-title {
   color: #3F4650;
   font-size: 16px;
@@ -215,6 +220,12 @@ p {
 }
 .main-wrapper .company {
   margin-bottom: 10px;
+  color: #97AAC3;
+}
+.main-wrapper .location {
+  position: absolute;
+  right: 0;
+  top: 0;
   color: #97AAC3;
 }
 .main-wrapper .project-title {
@@ -271,12 +282,24 @@ p {
   .main-wrapper {
     padding: 30px;
   }
+  .main-wrapper .company {
+    margin-bottom: 0px;
+    color: #97AAC3;
+  }
   .main-wrapper .time {
     position: static;
     display: block;
     margin-top: 5px;
   }
+  .main-wrapper .location {
+    position: static;
+    display: block;
+    margin-bottom: 5px;
+  }
   .main-wrapper .upper-row {
+    margin-bottom: 0;
+  }
+  .main-wrapper .lower-row {
     margin-bottom: 0;
   }
 }
